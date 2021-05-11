@@ -1,0 +1,191 @@
+/*This part set as default some layout settings*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Here is set the header size, style and color*/
+.header {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: #101010;
+}
+
+/*Here is set the central part of the header where all the elements will be*/
+.inner_header {
+    width: 65%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Here will be set the logo style, position, colors etc.*/
+.logo_ca {
+    height: 100%;
+    display: table;
+    float: left;
+}
+.logo_ca h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo_ca h1 span {
+    font-weight: 800;
+}
+
+/*Here will be the style of the navigation menu*/
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+/*Here the footer is configured*/
+footer {
+    text-align: center;
+    background-color: #101010;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.my-button {
+    margin: 100;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:30px;
+    font-family: 'Montserrat', 'sans-serif';
+    position: relative;
+    margin-top: 17.5%;
+    margin-left: 60%;
+  }
+
+
+
+/*Here will be the style for the password validator*/
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+  background:#ee0058;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.title h1{
+  margin-top: 50px;
+
+}
+
+.title h1 span {
+    font-weight: 0;
+    margin-top: center;
+}
+
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.form {
+  width:300px;
+}
+.form .form-element {
+  position:relative;
+}
+.form .form-element input {
+  width:100%;
+  padding:10px;
+  font-size:18px;
+  border:1px solid #888;
+  background:#f5f5f5;
+  box-sizing:border-box;
+  border-radius:50px;
+  outline:none;
+  text-indent:10px;
+}
+.form .form-element .toggle-password {
+  position:absolute;
+  width:40px;
+  height:40px;
+  top:2px;
+  right:2px;
+  border-radius:50%;
+  text-align:center;
+  line-height:35px;
+  font-size:20px;
+  cursor:pointer;
+}
+.form .form-element .toggle-password.active i.fa-eye {
+  display:none;
+}
+.form .form-element .toggle-password.active i.fa-eye-slash {
+  display:inline;
+}
+.form .form-element .toggle-password i.fa-eye-slash {
+  display:none;
+}
+.form .form-element .password-policies {
+  position:relative;
+  top:0px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  padding:0px;
+  height:0px;
+  background:#f5f5f5;
+  border-radius:5px;
+  margin-top:10px;
+  box-sizing:border-box;
+  opacity:0;
+  overflow:hidden;
+  transition: height 300ms ease-in-out,
+              opacity 300ms ease-in-out;
+}
+.form .form-element .password-policies.active {
+  opacity:1;
+  padding:10;
+  height:180px;
+}
+.form .form-element .password-policies > div {
+  margin:15px 10px;
+  font-weight:600;
+  color:#888;
+  transition:all 300ms ease-in-out;
+}
+.form .form-element .password-policies > div.active {
+  color:#111;
+}
